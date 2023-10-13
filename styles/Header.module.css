@@ -1,0 +1,34 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstRow {
+  
+  height: 40px;
+  background-color: #fafafc;
+}
+
+.cityText {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+}
+
+.navLink {
+  margin-right: 48px;
+}
+
+.navText {
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+}
+
+.navPhone {
+  color: #2e7bb2;
+  /* font-style: 12px;
+  line-height: 20px; */
+}
