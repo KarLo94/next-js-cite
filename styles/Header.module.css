@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
-.firstRow {
-  
+.allFirstRow {
   height: 40px;
   background-color: #fafafc;
+  padding-bottom: 0;
 }
 
 .cityText {
@@ -28,7 +29,81 @@
 }
 
 .navPhone {
-  color: #2e7bb2;
-  /* font-style: 12px;
-  line-height: 20px; */
+  color: #797979;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* Вторая строка */
+
+.logoLink {
+  margin-right: 32px;
+}
+
+/* .twoRowMenuBtn {
+  background: #f1f1f1;
+  border-radius: 28px;
+
+} */
+
+.twoRow {
+  height: 104px;
+
+}
+
+.twoRowNav {
+  margin-left: 16px;
+  margin-right: 52px;
+}
+
+.twoRowNavItm {
+  padding: 9px 15px;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+
+
+.btn {
+  margin-right: 40px;
+}
+
+
+/* Третья строка */
+
+.threeRowLinkFlex {
+  display: flex;
+}
+
+.threeRowLink {
+  
+  background-color: #f9f9f9;
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 9px 12px;
+  border-radius: 28px;
+  align-items: center;
+}
+
+.threeRowLink:not(:last-child) {
+  margin-right: 12px;
+}
+
+.threeRowLink:nth-child(1) {
+  color: #b4030e;
+}
+
+.threeRowBtn {
+  background-color: #f1f1f1;
+  min-width: 50px;
+  height: 28px;
+  margin-left: 12px;
+  border-radius: 28px;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.dots {
+  font-weight: 800;
 }
