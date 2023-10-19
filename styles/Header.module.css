@@ -99,26 +99,22 @@
 
 .katalog {
   position: fixed;
-  left: 202px;
+  left: -202px;
   top: 170px;
-  transition: trasform 0.3s linear;
-  background-color: #c0c0c0;
-}
-
-.katalog.opened {
-  display: block;
-  /* transform: translateX(100%); */
-  left: 222px;
-} 
-
-/* .katalogNav {
-  position: fixed;
-  top: 170px;
-  left: 202px;
   background-color: #fff;
 
-} */
+}
 
+.opened {
+  display: block;
+  transition: trasform 0.8s linear;
+  left: 202px;
+} 
+
+.active {
+  background-color: #da0916;
+  color: #fff;
+}
 
 .katalogNavItem {
   margin-top: 10px;

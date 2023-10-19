@@ -8,6 +8,7 @@ import { useState } from "react";
 const Header = () => {
 
   const [isOpen, setOpen] = useState();
+  const [isOpen1, setOpen1] = useState();
 
   return (
   
@@ -74,7 +75,7 @@ const Header = () => {
       </Link>
 
       <div className={styles.twoRowCatalog}>
-        <button className={styles.twoRowCtlBtn} onClick={() => setOpen(!isOpen)}>
+        <button className={styles.twoRowCtlBtn} onClick={() => setOpen(!isOpen) }>
           <div className={styles.burger}>
             <span className={styles.line}></span>
             <span className={styles.line}></span>
@@ -82,7 +83,7 @@ const Header = () => {
           </div>
           Каталог
         </button>
-        <button className={styles.twoRowCtlBtn}>
+        <button className={styles.twoRowCtlBtn} onClick={() => setOpen1(!isOpen1) }>
           <span className={styles.iconRooms}>
             <Image src="image-page-header/rooms.svg"
             width={20}
@@ -163,7 +164,7 @@ const Header = () => {
     </div>
 
               {/* Скрытые списки */}
-    <div className={`${styles.katalog} ${isOpen ? "opened" : ""}`}>
+    <div className={`${styles.katalog} ${isOpen ? styles.opened : ""}`}>
       <nav className={styles.katalogNav}>
         <ul className={styles.katalogNavList}>
           <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
@@ -171,7 +172,17 @@ const Header = () => {
           <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
         </ul>
       </nav>
-    </div>          
+    </div>      
+
+    <div className={`${styles.katalog} ${isOpen1 ? styles.opened : ""}`}>
+      <nav className={styles.katalogNav}>
+        <ul className={styles.katalogNavList}>
+          <li className={styles.katalogNavItem}>tut budet drugie spiski vs9kogo</li>
+          <li className={styles.katalogNavItem}>tut budet drugie spiski vs9kogo</li>
+          <li className={styles.katalogNavItem}>tut budet drugie spiski vs9kogo</li>
+        </ul>
+      </nav>
+    </div>      
 
     
 
