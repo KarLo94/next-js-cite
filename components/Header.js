@@ -15,7 +15,7 @@ const Header = () => {
   <div>
     {/* Первая строка */}
 
-    <div className={styles.allFirstRow}>
+    <div className={styles.firstRow}>
       <div className={styles.flex}>
         <div>
           <span>
@@ -64,7 +64,7 @@ const Header = () => {
 
     {/* Вторая строка */}
 
-    <div className={`${styles.flex} ${styles.twoRow}`}>
+    <div className={`${styles.flex} ${styles.secondRow}`}>
       <Link href="/" className={styles.logoLink}>
         <Image
           src="image-page-header/logo.svg"
@@ -74,8 +74,8 @@ const Header = () => {
         />
       </Link>
 
-      <div className={styles.twoRowCatalog}>
-        <button className={styles.twoRowCtlBtn} onClick={() => setOpen(!isOpen) }>
+      <div className={styles.secondRowCatalog}>
+        <button className={styles.secondRowCtlBtn} onClick={() => setOpen(!isOpen) }>
           <div className={styles.burger}>
             <span className={styles.line}></span>
             <span className={styles.line}></span>
@@ -83,7 +83,7 @@ const Header = () => {
           </div>
           Каталог
         </button>
-        <button className={styles.twoRowCtlBtn} onClick={() => setOpen1(!isOpen1) }>
+        <button className={styles.secondRowCtlBtn} onClick={() => setOpen1(!isOpen1) }>
           <span className={styles.iconRooms}>
             <Image src="image-page-header/rooms.svg"
             width={20}
@@ -96,14 +96,14 @@ const Header = () => {
       
 
 
-      <nav className={styles.twoRowNav}>
-        <a href="#" className={styles.twoRowNavItm}>
+      <nav className={styles.secondRowNav}>
+        <a href="#" className={styles.secondRowNavItm}>
           Идеи
         </a>
-        <a href="#" className={styles.twoRowNavItm}>
+        <a href="#" className={styles.secondRowNavItm}>
           Скидки
         </a>
-        <a href="#" className={styles.twoRowNavItm}>
+        <a href="#" className={styles.secondRowNavItm}>
           Услуги
         </a>
       </nav>
@@ -164,22 +164,22 @@ const Header = () => {
     </div>
 
               {/* Скрытые списки */}
-    <div className={`${styles.katalog} ${isOpen ? styles.opened : ""}`}>
-      <nav className={styles.katalogNav}>
-        <ul className={styles.katalogNavList}>
-          <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
-          <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
-          <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
+    <div className={`${styles.catalog} ${isOpen ? styles.opened : ""}`}>
+      <nav className={styles.catalogNav}>
+        <ul className={styles.catalogNavList}>
+          <li className={styles.catalogNavItem}>tut budet spiski vs9kogo</li>
+          <li className={styles.catalogNavItem}>tut budet spiski vs9kogo</li>
+          <li className={styles.catalogNavItem}>tut budet spiski vs9kogo</li>
         </ul>
       </nav>
     </div>      
 
-    <div className={`${styles.katalog} ${isOpen1 ? styles.opened : ""}`}>
-      <nav className={styles.katalogNav}>
-        <ul className={styles.katalogNavList}>
-          <li className={styles.katalogNavItem}>tut budet drugie spiski vs9kogo</li>
-          <li className={styles.katalogNavItem}>tut budet drugie spiski vs9kogo</li>
-          <li className={styles.katalogNavItem}>tut budet drugie spiski vs9kogo</li>
+    <div className={`${styles.catalog} ${isOpen1 ? styles.opened : ""}`}>
+      <nav className={styles.catalogNav}>
+        <ul className={styles.catalogNavList}>
+          <li className={styles.catalogNavItem}>tut budet drugie spiski vs9kogo</li>
+          <li className={styles.catalogNavItem}>tut budet drugie spiski vs9kogo</li>
+          <li className={styles.catalogNavItem}>tut budet drugie spiski vs9kogo</li>
         </ul>
       </nav>
     </div>      
@@ -191,38 +191,38 @@ const Header = () => {
     {/* Третья строка */}
 
     <div>
-      <div className={styles.threeRowLinkFlex}>
+      <div className={styles.thirdRowLinkFlex}>
         <div>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Цены пополам</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Товары для дома</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Диваны</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Кровати</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Кухни</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Мебель для офиса</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Мебель для детской</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>Ковры</span>
           </a>
-          <a href="#" className={styles.threeRowLink}>
+          <a href="#" className={styles.thirdRowLink}>
             <span>%Акции</span>
           </a>
         </div>
 
-        <button className={styles.threeRowBtn}>
+        <button className={styles.thirdRowBtn}>
           <span className={styles.dots}>. . .</span>
         </button>
       </div>

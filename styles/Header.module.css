@@ -5,7 +5,7 @@
   height: 100%;
 }
 
-.allFirstRow {
+.firstRow {
   height: 40px;
   background-color: #fafafc;
   padding-bottom: 0;
@@ -37,7 +37,7 @@
 /* Вторая строка */
 
 
-.twoRow {
+.secondRow {
   height: 104px;
 }
 
@@ -47,13 +47,13 @@
 }
 
 
-.twoRowCatalog {
+.secondRowCatalog {
   display: flex;
   background-color: #f1f1f1;
   border-radius: 28px;
 }
 
-.twoRowCtlBtn {
+.secondRowCtlBtn {
   display: flex;
   align-items: center;
   padding: 8px 20px;
@@ -97,7 +97,7 @@
 }  */
 
 
-.katalog {
+.catalog {
   position: fixed;
   left: -202px;
   top: 170px;
@@ -116,16 +116,16 @@
   color: #fff;
 }
 
-.katalogNavItem {
+.catalogNavItem {
   margin-top: 10px;
 }
 
-.twoRowNav {
+.secondRowNav {
   margin-left: 16px;
   margin-right: 52px;
 }
 
-.twoRowNavItm {
+.secondRowNavItm {
   padding: 9px 15px;
   font-size: 16px;
   line-height: 24px;
@@ -197,11 +197,11 @@
 
 /* Третья строка */
 
-.threeRowLinkFlex {
+.thirdRowLinkFlex {
   display: flex;
 }
 
-.threeRowLink {
+.thirdRowLink {
   
   background-color: #f9f9f9;
   color: #000;
@@ -212,15 +212,15 @@
   align-items: center;
 }
 
-.threeRowLink:not(:last-child) {
+.thirdRowLink:not(:last-child) {
   margin-right: 12px;
 }
 
-.threeRowLink:nth-child(1) {
+.thirdRowLink:nth-child(1) {
   color: #b4030e;
 }
 
-.threeRowBtn {
+.thirdRowBtn {
   background-color: #f1f1f1;
   min-width: 50px;
   height: 28px;
