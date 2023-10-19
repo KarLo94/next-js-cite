@@ -36,19 +36,92 @@
 
 /* Вторая строка */
 
+
+.twoRow {
+  height: 104px;
+}
+
+
 .logoLink {
   margin-right: 32px;
 }
 
-/* .twoRowMenuBtn {
-  background: #f1f1f1;
+
+.twoRowCatalog {
+  display: flex;
+  background-color: #f1f1f1;
   border-radius: 28px;
+}
+
+.twoRowCtlBtn {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.iconRooms {
+  margin-right: 12px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 22px;
+  padding: 4px 0;
+  margin-right: 12px;
+}
+
+.line {
+  background: #000;
+  border-radius: 4px;
+  width: 18px;
+  height: 2px;
+  margin: 0 1px;
+}
+
+/* .burger.active::before{
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}  */
+
+
+.katalog {
+  position: fixed;
+  left: 202px;
+  top: 170px;
+  transition: trasform 0.3s linear;
+  background-color: #c0c0c0;
+}
+
+.katalog.opened {
+  display: block;
+  /* transform: translateX(100%); */
+  left: 222px;
+} 
+
+/* .katalogNav {
+  position: fixed;
+  top: 170px;
+  left: 202px;
+  background-color: #fff;
 
 } */
 
-.twoRow {
-  height: 104px;
 
+.katalogNavItem {
+  margin-top: 10px;
 }
 
 .twoRowNav {
@@ -64,9 +137,66 @@
 }
 
 
+
+.searchContainer {
+  width: 100%;
+  position: relative;
+  vertical-align: middle; 
+} 
+
+.search {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid #797979;
+  border-radius: 100px;
+  padding: 0 76px 0 20px;
+}
+
+.searchBtn {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn:not(:last-child) {
   margin-right: 40px;
 }
+
+.iconCount {
+  position: absolute;
+  right: 1px;
+  top: -2px;
+  padding: 3px;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #da0916;
+  font-size: 10px;
+}
+
+.iconEmpty {
+  background-color: #c0c0c0;
+}
+
+
 
 
 /* Третья строка */

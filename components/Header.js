@@ -1,8 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
+import { useState } from "react";
 
-const Header = () => (
+
+
+const Header = () => {
+
+  const [isOpen, setOpen] = useState();
+
+  return (
+  
   <div>
     {/* Первая строка */}
 
@@ -18,9 +26,6 @@ const Header = () => (
             />
           </span>
           <span className={styles.cityText}>Калуга</span>
-          {/* <svg> 
-
-          </svg> */}
         </div>
 
         <nav>
@@ -60,46 +65,123 @@ const Header = () => (
 
     <div className={`${styles.flex} ${styles.twoRow}`}>
       <Link href="/" className={styles.logoLink}>
-        <Image src=''
-        width={150}
-        height={40}
-        alt="Logo" />
+        <Image
+          src="image-page-header/logo.svg"
+          width={150}
+          height={40}
+          alt="Logo"
+        />
       </Link>
 
-      <div className={styles.twoRowMenuBtn}>
-        <button className={styles.twoRowBtn}>Каталог</button>
-        <button className={styles.twoRowBtn}>Комнаты</button>
+      <div className={styles.twoRowCatalog}>
+        <button className={styles.twoRowCtlBtn} onClick={() => setOpen(!isOpen)}>
+          <div className={styles.burger}>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+          </div>
+          Каталог
+        </button>
+        <button className={styles.twoRowCtlBtn}>
+          <span className={styles.iconRooms}>
+            <Image src="image-page-header/rooms.svg"
+            width={20}
+            height={20}
+            alt="icon"/>
+          </span>
+          Комнаты</button>
       </div>
 
+      
+
+
       <nav className={styles.twoRowNav}>
-        <a href="#" className={styles.twoRowNavItm}>Идеи</a>
-        <a href="#" className={styles.twoRowNavItm}>Скидки</a>
-        <a href="#" className={styles.twoRowNavItm}>Услуги</a>
+        <a href="#" className={styles.twoRowNavItm}>
+          Идеи
+        </a>
+        <a href="#" className={styles.twoRowNavItm}>
+          Скидки
+        </a>
+        <a href="#" className={styles.twoRowNavItm}>
+          Услуги
+        </a>
       </nav>
 
       <div>
-        <div>Input</div>
-        <button>O</button>
+        <div className={styles.searchContainer}>
+          <input
+            type="search"
+            name="input-search"
+            className={styles.search}
+            placeholder="Поиск"
+          ></input>
+          <button type="button" aria-label="Найти" className={styles.searchBtn}>
+            <Image src="image-page-header/search.svg" width={22} height={22} />
+          </button>
+        </div>
       </div>
 
       <div className={styles.flex}>
         <a href="#" className={styles.btn}>
-          <span>Icon</span>
+          <span className={styles.icon}>
+            <Image
+              src="image-page-header/favorites.svg"
+              width={26}
+              height={24}
+              alt="icon-favorites"
+            />
+            <span className={`${styles.iconCount} ${styles.iconEmpty}`}>0</span>
+          </span>
           <div>Избранное</div>
         </a>
-        <div>Войти</div>
-        <a href="#">
-          <span></span>
+
+        <a href="#" className={styles.btn}>
+          <span className={styles.icon}>
+            <Image
+              src="image-page-header/account.svg"
+              width={30}
+              height={30}
+              alt="icon-account"
+            />
+          </span>
+          <div>Войти</div>
+        </a>
+
+        <a href="#" className={styles.btn}>
+          <span className={styles.icon}>
+            <Image
+              src="image-page-header/basket.svg"
+              width={32}
+              height={32}
+              alt="icon-basket"
+            />
+            <span className={`${styles.iconCount} ${styles.iconEmpty}`}>0</span>
+          </span>
           <div>Корзина</div>
         </a>
       </div>
     </div>
 
+              {/* Скрытые списки */}
+    <div className={`${styles.katalog} ${isOpen ? "opened" : ""}`}>
+      <nav className={styles.katalogNav}>
+        <ul className={styles.katalogNavList}>
+          <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
+          <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
+          <li className={styles.katalogNavItem}>tut budet spiski vs9kogo</li>
+        </ul>
+      </nav>
+    </div>          
+
+    
+
+
+
     {/* Третья строка */}
 
     <div>
       <div className={styles.threeRowLinkFlex}>
-        <div >
+        <div>
           <a href="#" className={styles.threeRowLink}>
             <span>Цены пополам</span>
           </a>
@@ -128,13 +210,21 @@ const Header = () => (
             <span>%Акции</span>
           </a>
         </div>
-        
+
         <button className={styles.threeRowBtn}>
           <span className={styles.dots}>. . .</span>
         </button>
       </div>
     </div>
   </div>
-);
+
+  )
+
+ }
 
 export default Header;
+
+
+
+
+
