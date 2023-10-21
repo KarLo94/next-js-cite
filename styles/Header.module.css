@@ -11,15 +11,41 @@
   padding-bottom: 0;
 }
 
+.cityFlex {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navList {
+  margin-left: auto;
+}
+
 .cityText {
   margin-left: 10px;
+  margin-right: 10px;
   font-size: 12px;
   line-height: 20px;
   color: #797979;
 }
 
+.cityText:hover {
+  border-bottom: 1px solid #000;
+}
+
 .navLink {
   margin-right: 48px;
+  font-weight: 500;
+}
+
+.navText:hover {
+  color: #000;
+}
+
+.navLinkSpan {
+  margin-left: 10px;
+  color: #da0916;
 }
 
 .navText {
@@ -29,9 +55,15 @@
 }
 
 .navPhone {
-  color: #797979;
+  color: #2e7bb2;
   font-size: 12px;
   line-height: 20px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navPhone:hover {
+  color: #da0916;
 }
 
 /* Вторая строка */
@@ -56,12 +88,19 @@
 .secondRowCtlBtn {
   display: flex;
   align-items: center;
-  padding: 8px 20px;
+  padding: 7px 20px;
   outline: none;
   border: none;
+  border-radius: 28px;
   background-color: transparent;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.secondRowCtlBtn:hover {
+  background-color: #b4030e;
 }
 
 .iconRooms {
@@ -79,7 +118,7 @@
 }
 
 .line {
-  background: #000;
+  background: #fff;
   border-radius: 4px;
   width: 18px;
   height: 2px;
@@ -99,7 +138,7 @@
 
 .catalog {
   position: fixed;
-  left: -202px;
+  left: -250px;
   top: 170px;
   background-color: #fff;
 
@@ -129,15 +168,19 @@
   padding: 9px 15px;
   font-size: 16px;
   line-height: 24px;
-
+  font-weight: 600;
+  transition: 0.2s;
+  color: #000;
 }
+
 
 
 
 .searchContainer {
   width: 100%;
   position: relative;
-  vertical-align: middle; 
+  vertical-align: middle;
+  padding-right: 68px; 
 } 
 
 .search {
@@ -147,12 +190,17 @@
   border: 1px solid #797979;
   border-radius: 100px;
   padding: 0 76px 0 20px;
+  transition: 0.2s;
+}
+
+.search:hover {
+  background-color: #fafafc;
 }
 
 .searchBtn {
   position: absolute;
   bottom: 5px;
-  right: 10px;
+  right: 80px;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -167,21 +215,52 @@
   position: relative;
 }
 
+.iconFavorite {
+  width: 26px;
+  height: 24px;
+}
+
+.iconAccount {
+  width: 30px;
+  height: 30px;
+}
+
+
 .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
+    /* тут хз пока что */
+.icon:hover * {
+  stroke: #c0c0c0;
+} 
+
 .btn:not(:last-child) {
   margin-right: 40px;
 }
 
+
+.text {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  transition: 0.2s;
+  color: #000;
+}
+
+.text:hover {
+  color: #c0c0c0;
+}
+
+
 .iconCount {
   position: absolute;
-  right: 1px;
+  right: -1px;
   top: -2px;
-  padding: 3px;
+  padding: 1px 6px;
   border-radius: 9px;
   color: #fff;
   background-color: #da0916;
@@ -202,14 +281,15 @@
 }
 
 .thirdRowLink {
-  
   background-color: #f9f9f9;
   color: #000;
   font-size: 14px;
+  font-weight: 500;
   line-height: 24px;
   padding: 9px 12px;
   border-radius: 28px;
   align-items: center;
+  transition: 0.2s;
 }
 
 .thirdRowLink:not(:last-child) {
@@ -228,8 +308,9 @@
   border-radius: 28px;
   border: none;
   padding-bottom: 5px;
+  font-weight: 900;
 }
 
 .dots {
-  font-weight: 800;
+  cursor: pointer;
 }
