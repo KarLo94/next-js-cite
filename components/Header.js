@@ -1,19 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/Header.module.css";
+import styles from "../styles/Header.module.scss";
 import { useState } from "react";
 
 const Header = () => {
-  const [isOpen, setOpen] = useState();
-  const [isOpen1, setOpen1] = useState();
+  let [isOpen, setOpen] = useState(true);
+  let [isOpen1, setOpen1] = useState();
 
-  function handleOpenClick() {
-    setOpen(!isOpen);
-  }
+  // let [active, setActive] = useState(false);
 
-  function handleOpenClick2() {
-    setOpen1(!isOpen1);
-  }
+  // function handleOpenClick() {
+  //   setOpen(!isOpen);
+  // }
+
+  // function handleOpenClick2() {
+  //   setOpen1(!isOpen1);
+  // }
+
+  let [isOpenDots, setIsOpenDots] = useState(false);
 
   return (
     <div>
@@ -87,8 +91,8 @@ const Header = () => {
 
         <div className={styles.secondRowCatalog}>
           <button
-            className={`${styles.secondRowCtlBtn} ${styles.active}`}
-            onClick={handleOpenClick}
+            onClick={() => setOpen((isOpen = !isOpen))}
+            className={`${styles.secondRowCtlBtn} ${isOpen && styles.active}`}
           >
             <div className={styles.burger}>
               <span className={styles.line}></span>
@@ -96,8 +100,28 @@ const Header = () => {
               <span className={styles.line}></span>
             </div>
             Каталог
+            {/* {isOpen && (
+              <div className={styles.catalog}>
+                <nav className={styles.catalogNav}>
+                  <ul className={styles.catalogNavList}>
+                    <li className={styles.catalogNavItem}>
+                      tut budet spiski vs9kogo
+                    </li>
+                    <li className={styles.catalogNavItem}>
+                      tut budet spiski vs9kogo
+                    </li>
+                    <li className={styles.catalogNavItem}>
+                      tut budet spiski vs9kogo
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            )} */}
           </button>
-          <button className={styles.secondRowCtlBtn} onClick={handleOpenClick2}>
+          <button
+            className={`${styles.secondRowCtlBtn} ${isOpen1 && styles.active}`}
+            onClick={() => setOpen1((isOpen1 = !isOpen1))}
+          >
             <span className={styles.iconRooms}>
               <Image
                 src="image-page-header/rooms.svg"
@@ -219,7 +243,7 @@ const Header = () => {
       </div>
 
       {/* Скрытые списки */}
-      <div className={`${styles.catalog} ${isOpen ? styles.opened : ""}`}>
+      {/* <div className={`${styles.catalog} ${isOpen ? styles.opened : ""}`}>
         <nav className={styles.catalogNav}>
           <ul className={styles.catalogNavList}>
             <li className={styles.catalogNavItem}>tut budet spiski vs9kogo</li>
@@ -232,25 +256,19 @@ const Header = () => {
       <div className={`${styles.catalog} ${isOpen1 ? styles.opened : ""}`}>
         <nav className={styles.catalogNav}>
           <ul className={styles.catalogNavList}>
-            <li className={styles.catalogNavItem}>
-              tut budet drugie spiski vs9kogo
-            </li>
-            <li className={styles.catalogNavItem}>
-              tut budet drugie spiski vs9kogo
-            </li>
-            <li className={styles.catalogNavItem}>
-              tut budet drugie spiski vs9kogo
-            </li>
+            <li className={styles.catalogNavItem}>tut budet drugie spiski vs9kogo</li>
+            <li className={styles.catalogNavItem}>tut budet drugie spiski vs9kogo</li>
+            <li className={styles.catalogNavItem}>tut budet drugie spiski vs9kogo</li>
           </ul>
         </nav>
-      </div>
+      </div> */}
 
       {/* Третья строка */}
 
       <div>
         <div className={styles.thirdRowLinkFlex}>
           <div>
-            <a href="#" className={styles.thirdRowLink}>
+            <a href="#" className={`${styles.thirdRowLink} ${styles.firstLink}`}>
               <span>Цены пополам</span>
             </a>
             <a href="#" className={styles.thirdRowLink}>
@@ -279,7 +297,35 @@ const Header = () => {
             </a>
           </div>
 
-          <button className={styles.thirdRowBtn}>
+          <button 
+            onClick={() => setIsOpenDots(isOpenDots = !isOpenDots)}
+            className={`${styles.thirdRowBtn} ${isOpenDots && 'activeDots'}`}>
+              {isOpenDots && (
+                <div>
+                  <div className={styles.overlay}></div>
+                  <div className={styles.dotsCard} onClick={e => e.stopPropagation()}>
+                  <button className={styles.dotsBtn} onClick={() => setIsOpenDots(!isOpenDots)}>
+                    <Image 
+                    src="image-page-header/closes.svg"
+                    width={15}
+                    height={15}
+                    alt="icon close"/>
+                  </button>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Дом - это личное!</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Кешбэк 20% на гардеробные Оскар</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Всё по полочкам</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Лаборатория здорового сна Hoff</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Пора утепляться</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>0-0-12 на всё</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>0-0-24 на гардеробные</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>0-0-24 на кухни</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Бесплатная доставка товаров для дома</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Лучшая цена</a>
+                  <a href="#" className={`${styles.thirdRowLink} ${styles.textDots}`}>Бесплатная сборка кухни!</a>
+                  </div>
+                
+                </div>
+              )}
             <span className={styles.dots}>. . .</span>
           </button>
         </div>
