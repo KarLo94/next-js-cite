@@ -1,3 +1,9 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 202px;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -8,7 +14,6 @@
 .firstRow {
   height: 40px;
   background-color: #fafafc;
-  padding-bottom: 0;
 }
 
 .cityFlex {
@@ -376,6 +381,7 @@
 
 .textDots {
   margin-bottom: 12px;
+  width: fit-content;
   text-align: left;
 }
 

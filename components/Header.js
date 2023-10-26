@@ -23,7 +23,7 @@ const Header = () => {
     <div>
       {/* Первая строка */}
 
-      <div className={styles.firstRow}>
+      <div className={`${styles.firstRow} ${styles.container}`}>
         <div className={styles.flex}>
           <div className={styles.cityFlex}>
             <span>
@@ -79,7 +79,7 @@ const Header = () => {
 
       {/* Вторая строка */}
 
-      <div className={`${styles.flex} ${styles.secondRow}`}>
+      <div className={`${styles.flex} ${styles.secondRow} ${styles.container}`}>
         <Link href="/" className={styles.logoLink}>
           <Image
             src="image-page-header/logo.svg"
@@ -265,7 +265,7 @@ const Header = () => {
 
       {/* Третья строка */}
 
-      <div>
+      <div className={styles.container}>
         <div className={styles.thirdRowLinkFlex}>
           <div>
             <a href="#" className={`${styles.thirdRowLink} ${styles.firstLink}`}>
