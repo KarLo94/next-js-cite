@@ -173,6 +173,8 @@ const Header = () => {
           </button>
         </div>
 
+        {/* Icon second row */}
+
         <div className={styles.flex}>
           <a href="#" className={styles.btn}>
             <span className={styles.icon}>

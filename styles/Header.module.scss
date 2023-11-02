@@ -221,6 +221,13 @@
 
 }
 
+//Icon second row
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .icon {
   width: 32px;
   height: 32px;
@@ -239,41 +246,29 @@
   height: 30px;
 }
 
-
-.btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-    /* тут хз пока что */
 .icon:hover * {
   stroke: #c0c0c0;
 } 
+.text:hover {
+  color: #c0c0c0;
+}
 
 .btn:not(:last-child) {
   margin-right: 40px;
 }
-
 
 .text {
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
   transition: 0.2s;
-  color: #000;
+  color: currentColor;
 }
-
-.text:hover {
-  color: #c0c0c0;
-}
-
 
 .iconCount {
   position: absolute;
-  right: -1px;
-  top: -2px;
+  right: -5px;
+  top: 0;
   padding: 1px 6px;
   border-radius: 9px;
   color: #fff;
