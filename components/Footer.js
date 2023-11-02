@@ -183,12 +183,6 @@ const Footer = () => {
         <div className={styles.footer__nav}>
           <div className={`${styles.container} ${styles.footer__nav__flex}`}>
             <div className={styles.footer__nav__banner}>
-              {/* <Image
-                src="/image-page-footer/banner.webp"
-                width={486}
-                height={328}
-                alt="banner"
-              /> */}
               <div className={styles.footer__nav__banner__content}>
                 <div className={styles.footer__nav__banner__content__top}>
                   <h3 className={styles.footer__nav__title}>
@@ -220,7 +214,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className={styles.footer__nav__section}>
+            <div className={`${styles.footer__nav__section} ${styles.order}`}>
               <h3 className={styles.footer__nav__name}>Наши услуги</h3>
               <ul className={styles.footer__nav__list}>
                 <li className={styles.footer__nav__link}>
@@ -247,7 +241,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className={styles.footer__nav__section}>
+            <div className={`${styles.footer__nav__section} ${styles.order}`}>
               <h3 className={styles.footer__nav__name}>Планирование мебели</h3>
               <ul className={styles.footer__nav__list}>
                 <li className={styles.footer__nav__link}>
@@ -264,7 +258,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className={styles.footer__nav__section}>
+            <div className={`${styles.footer__nav__section} ${styles.order}`}>
               <h3 className={styles.footer__nav__name}>Вдохновение</h3>
               <ul className={styles.footer__nav__list}>
                 <li className={styles.footer__nav__link}>
@@ -279,7 +273,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className={styles.footer__nav__section}>
+            <div className={`${styles.footer__nav__section} ${styles.order}`}>
               <h3 className={styles.footer__nav__name}>Hoff для бизнеса</h3>
               <ul className={styles.footer__nav__list}>
                 <li className={styles.footer__nav__link}>
