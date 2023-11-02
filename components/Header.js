@@ -4,7 +4,7 @@ import styles from "../styles/Header.module.scss";
 import { useState } from "react";
 
 const Header = () => {
-  let [isOpen, setOpen] = useState(true);
+  let [isOpen, setOpen] = useState();
   let [isOpen1, setOpen1] = useState();
 
   // let [active, setActive] = useState(false);
@@ -92,15 +92,14 @@ const Header = () => {
         <div className={styles.secondRowCatalog}>
           <button
             onClick={() => setOpen((isOpen = !isOpen))}
-            className={`${styles.secondRowCtlBtn} ${isOpen && styles.active}`}
-          >
+            className={`${styles.secondRowCtlBtn} ${isOpen && styles.active}`}>
             <div className={styles.burger}>
               <span className={styles.line}></span>
               <span className={styles.line}></span>
               <span className={styles.line}></span>
             </div>
             Каталог
-            {/* {isOpen && (
+            {isOpen && (
               <div className={styles.catalog}>
                 <nav className={styles.catalogNav}>
                   <ul className={styles.catalogNavList}>
@@ -116,12 +115,11 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
-            )} */}
+            )}
           </button>
           <button
             className={`${styles.secondRowCtlBtn} ${isOpen1 && styles.active}`}
-            onClick={() => setOpen1((isOpen1 = !isOpen1))}
-          >
+            onClick={() => setOpen1((isOpen1 = !isOpen1))}>
             <span className={styles.iconRooms}>
               <Image
                 src="image-page-header/rooms.svg"
@@ -131,6 +129,23 @@ const Header = () => {
               />
             </span>
             Комнаты
+            {isOpen1 && (
+              <div className={styles.catalog}>
+                <nav className={styles.catalogNav}>
+                  <ul className={styles.catalogNavList}>
+                    <li className={styles.catalogNavItem}>
+                      tut budet spiski рррррррvs9kogo
+                    </li>
+                    <li className={styles.catalogNavItem}>
+                      tut budet spiski рррррррррvs9kogo
+                    </li>
+                    <li className={styles.catalogNavItem}>
+                      tut budet spiskiррррррррр vs9kogo
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            )}
           </button>
         </div>
 

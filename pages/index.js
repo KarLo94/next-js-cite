@@ -15,7 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}>
-        <Heading text='Главная страница' />
+        <div className={styles.main__banner}>
+
+        </div>
       </main>
     </>
   )

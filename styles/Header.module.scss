@@ -87,17 +87,12 @@
 }
 
 
+// Burger Catalog
 .secondRowCatalog {
   display: flex;
   background-color: #f1f1f1;
   border-radius: 28px;
 }
-
-
-
-
-
-
 
 
 .secondRowCtlBtn {
@@ -115,7 +110,7 @@
 }
 
 .secondRowCtlBtn:hover {
-  color: #fff;
+  color: white;
 }
 
 .iconRooms {
@@ -140,22 +135,22 @@
   margin: 0 1px;
 }
 
-/* .burger.active::before{
-  top: 50%;
-  transform: rotate(-45deg) translate(0, -50%);
-}
+// .burger .active::before{
+//   top: 50%;
+//   transform: rotate(-45deg) translate(0, -50%);
+// }
 
-.burger.active::after{
-  bottom: 50%;
-  transform: rotate(45deg) translate(0, 50%);
-}  */
+// .burger .active::after{
+//   bottom: 50%;
+//   transform: rotate(45deg) translate(0, 50%);
+// } 
 
 
 .catalog {
   position: fixed;
   left: 203px;
   top: 170px;
-  background-color: red;
+  background-color: white;
 
 }
 
