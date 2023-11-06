@@ -79,6 +79,7 @@
 
 .secondRow {
   height: 104px;
+  background-color: white;
 }
 
 
@@ -202,6 +203,7 @@
   height: 40px;
   overflow: hidden;
   border: 1px solid #797979;
+  background-color: white;
   border-radius: 100px;
   padding: 0 14px 0 20px;
   transition: 0.2s;
@@ -293,6 +295,7 @@
 .thirdRowLinkFlex {
   position: relative;
   display: flex;
+  background-color: white;
 
   .thirdRowLink {
     background-color: #f9f9f9;
@@ -343,6 +346,7 @@
 .dots {
   cursor: pointer;
   transition: 0.2s;
+  color: #000;
 }
 
 .activeDots {
