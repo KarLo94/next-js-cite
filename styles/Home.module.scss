@@ -15,23 +15,32 @@
   position: relative;
 }
 
-.prev {
-  transform: scaleX(-1);
-  width: 24px;
- 
-}
-
-.next {
-  
-}
-
 .bannerBtn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
   cursor: pointer;
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid #c0c0c0;
   background-image: url('/image-index/arrow.svg');
-  
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+}
+
+.bannerBtn:hover {
+  background-color: #f9f9f9;
+}
+
+.prev {
+  transform: scaleX(-1);
+  margin-left: 24px;
+}
+
+.next {
+  right: 0;
+  margin-right: 24px;
 }
