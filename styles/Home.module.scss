@@ -1,13 +1,18 @@
-// import 'swiper/scss';
-// import 'swiper/scss/navigation';
-// import 'swiper/scss/pagination';
 .main {
   &__banner {
     margin-top: 28px;
     
   }
 
+  
+}
+
+
+
+.mySwiper {
+
   .swiper-button-prev {
-    width: 5px;
+    color: azure;
   }
+  color: #000;
 }
