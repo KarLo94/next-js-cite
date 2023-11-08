@@ -2,7 +2,6 @@ import styles from '../../styles/Home.module.scss';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { SwiperNavBtns } from './SwiperNavBtns';
-import  SwiperPaginat  from './SwiperPaginat';
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
@@ -26,16 +25,11 @@ const SwiperBanner = () => {
       }}
       pagination={{
         clickable: false,
-        el: '.swiperPagBul',
-        bulletClass: 'swiperScrollbar',
-        bulletActiveClass: 'swiper-scrollbar-drag',
-      //   renderBullet: function (index, className) {
-      //   return '<span class="' + className + '">' + (index + 1) + '</span>';
-      // }
+        
+        renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + '</span>';
+      }
         }}
-        // scrollbar={{
-        //   el: '.swiperScroll',
-        //    draggable: true, dragSize: 24  }}
        navigation={true}
       modules={[Autoplay, Pagination, Navigation, Scrollbar]} className="mySwiper">
 
@@ -53,7 +47,6 @@ const SwiperBanner = () => {
         width={1499} height={506} alt='swiper image' /></a></SwiperSlide>
 
       <SwiperNavBtns />
-      <SwiperPaginat />
       
     </Swiper>
   
