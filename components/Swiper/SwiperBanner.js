@@ -2,9 +2,11 @@ import styles from '../../styles/Home.module.scss';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { SwiperNavBtns } from './SwiperNavBtns';
+import  SwiperPaginat  from './SwiperPaginat';
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
+
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
@@ -13,18 +15,24 @@ const SwiperBanner = () => {
   return (
 
     <Swiper
-       spaceBetween={1}
+      spaceBetween={1}
       centeredSlides={true}
       loop={true}
       autoplay={{
         delay: 6000,
         disableOnInteraction: false,
       }}
-       pagination={{
-         clickable: true,}}
+      pagination={{
+        clickable: false,
+        el: '.swiperPagBul',
+        renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+        }}
        navigation={true}
       modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
-      <SwiperSlide><a href='#'><Image className={styles.imgBan} src='/image-index/2000x676_75.webp'
+
+      <SwiperSlide ><a href='#'><Image className={styles.imgBan} src='/image-index/2000x676_75.webp'
         width={1499} height={506} alt='swiper image' /></a></SwiperSlide>
       <SwiperSlide><a href='#'><Image className={styles.imgBan} src='/image-index/2000x676_75(1).webp'
         width={1499} height={506} alt='swiper image' /></a></SwiperSlide>
@@ -36,7 +44,10 @@ const SwiperBanner = () => {
         width={1499} height={506} alt='swiper image' /></a></SwiperSlide>
       <SwiperSlide><a href='#'><Image className={styles.imgBan} src='/image-index/2000x676_75(5).webp'
         width={1499} height={506} alt='swiper image' /></a></SwiperSlide>
+
       <SwiperNavBtns />
+      <SwiperPaginat />
+      
     </Swiper>
   
   )
