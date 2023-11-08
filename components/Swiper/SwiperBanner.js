@@ -6,9 +6,11 @@ import  SwiperPaginat  from './SwiperPaginat';
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
+import 'swiper/scss/scrollbar';
 
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Scrollbar } from 'swiper/modules';
 
 const SwiperBanner = () => {
 
@@ -25,12 +27,17 @@ const SwiperBanner = () => {
       pagination={{
         clickable: false,
         el: '.swiperPagBul',
-        renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
-      }
+        bulletClass: 'swiperScrollbar',
+        bulletActiveClass: 'swiper-scrollbar-drag',
+      //   renderBullet: function (index, className) {
+      //   return '<span class="' + className + '">' + (index + 1) + '</span>';
+      // }
         }}
+        // scrollbar={{
+        //   el: '.swiperScroll',
+        //    draggable: true, dragSize: 24  }}
        navigation={true}
-      modules={[Autoplay, Pagination, Navigation]} className="mySwiper">
+      modules={[Autoplay, Pagination, Navigation, Scrollbar]} className="mySwiper">
 
       <SwiperSlide ><a href='#'><Image className={styles.imgBan} src='/image-index/2000x676_75.webp'
         width={1499} height={506} alt='swiper image' /></a></SwiperSlide>
