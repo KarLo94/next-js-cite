@@ -9,6 +9,8 @@ const PopularCategories = () => {
 
       <div className={styles.popCatFlex}>
 
+        <PopCatItem />
+
       </div>
 
     </div>
