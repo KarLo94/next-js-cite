@@ -1,0 +1,40 @@
+.sectionPopCat {
+  margin-top: 45px;
+}
+
+.categories {
+  margin-top: 30px;
+
+  .catList {
+    display: flex;
+    justify-content: center;
+
+  .catItem {
+    width: 200px;
+  }
+  
+  .catItem:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .catTitle {
+    padding-top: 18px;
+  }
+
+  .catText {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    margin: 0;
+    text-align: center;
+  }
+  
+  
+    
+  }
+
+}
+
+
+
