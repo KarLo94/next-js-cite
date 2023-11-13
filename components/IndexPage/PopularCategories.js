@@ -1,6 +1,7 @@
 import Heading from "../Heading";
 import styles from "./PopCat.module.scss";
 import PopCatItem from "./PopCatItem";
+import Buttons from "../Buttons/Buttons";
 
 const PopularCategories = () => {
   return (
@@ -10,6 +11,7 @@ const PopularCategories = () => {
       <div className={styles.popCatFlex}>
 
         <PopCatItem />
+        <Buttons />
 
       </div>
 
