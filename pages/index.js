@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Heading from '../components/Heading';
 import styles from '/styles/Home.module.scss';
 import SwiperBanner from '../components/Swiper/SwiperBanner';
 import PopularCategories from '@/components/IndexPage/PopularCategories';
-
+import Carousel from '@/components/Carousel/Carousel';
 
 
 const Home = () => {
@@ -25,6 +23,8 @@ const Home = () => {
          <SwiperBanner />
 
          <PopularCategories />
+
+         <Carousel />
 
        </div>
   

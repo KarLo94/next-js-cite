@@ -1,0 +1,31 @@
+.minStyleBtn {
+  text-align: center;
+  padding: 12px 30px;
+  width: fit-content;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+}
+
+.minStylesBtnText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.redBtn {
+  color: white;
+  background-color: #da0916;
+}
+.redBtn:hover {
+  background-color: #be0612;
+}
+
+.greyBtn {
+  background-color: #fff;
+  color: #000;
+}
+.greyBtn:hover {
+  background-color: #f9f9f9;
+}
+
