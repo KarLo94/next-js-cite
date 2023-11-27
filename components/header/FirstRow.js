@@ -1,3 +1,4 @@
+import City from './City';
 import styles from './FirstRow.module.scss';
 import Image from "next/image";
 
@@ -5,23 +6,7 @@ const FirstRow = () => {
   return (
 
         <> 
-          <div className={styles.cityFlex}>
-            <span>
-              <Image
-                src="image-page-header/mapmarker.svg"
-                width={14}
-                height={14}
-                alt="map-marker"
-              />
-            </span>
-            <span className={styles.cityText}>Калуга</span>
-            <Image
-              src="image-page-header/str.svg"
-              width={10}
-              height={10}
-              alt="map-str"
-            />
-          </div>
+          <City />
 
           <nav className={styles.navList}>
             <ul className={styles.flex}>

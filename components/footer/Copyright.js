@@ -1,26 +1,12 @@
+import City from '../header/City';
 import styles from './Copyright.module.scss';
-import Image from 'next/image';
 
 const Copyright = () => {
   return (
     <>
       <div className={styles.footer__copyright__wrapper}>
         <div className={styles.footer__copyright__city}>
-          <div className={styles.cityFlex}>
-            <Image className={styles.footer__copyright__city__img1}
-              src="image-page-footer/marker.svg"
-              width={24}
-              height={24}
-              alt="map-marker"
-            />
-            <span className={styles.cityText}>Калуга</span>
-            <Image className={styles.footer__copyright__city__img2}
-              src="image-page-header/str.svg"
-              width={10}
-              height={10}
-              alt="map-str"
-            />
-          </div>
+          <City />
         </div>
 
         <div>

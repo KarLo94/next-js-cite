@@ -1,0 +1,19 @@
+.cityFlex {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cityText {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #797979;
+}
+
+.cityText:hover {
+  border-bottom: 1px solid #000;
+}

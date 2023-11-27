@@ -21,12 +21,6 @@
     color: #000;
   }
 
-  &__app_link_cards {
-    display: flex;
-    
-  }
-
-
 
   &__app_img {
     position: absolute;
@@ -47,7 +41,4 @@
     max-width: 211px;
     color: #000;
   }
-}
-.appStore:not(last-child) {
-  margin-right: 18px;
 }
