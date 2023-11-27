@@ -1,3 +1,4 @@
+import FirstRow from './header/FirstRow';
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Header.module.scss";
@@ -7,20 +8,17 @@ const Header = () => {
   let [isOpen, setOpen] = useState();
   let [isOpen1, setOpen1] = useState();
 
-  // let [active, setActive] = useState(false);
-
-  // function handleOpenClick() {
-  //   setOpen(!isOpen);
-  // }
-
-  // function handleOpenClick2() {
-  //   setOpen1(!isOpen1);
-  // }
 
   let [isOpenDots, setIsOpenDots] = useState(false);
 
   return (
     <div>
+
+      <FirstRow />
+
+
+
+
       {/* Первая строка */}
 
       <div className={styles.firstRow}>
