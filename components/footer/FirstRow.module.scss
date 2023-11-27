@@ -1,0 +1,53 @@
+.footer {
+  &__app_block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 228px;
+  }
+
+  &__app_link {
+    display: flex;
+    flex-direction: column;
+    max-width: 491px;
+  }
+
+  &__app_link_text {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000;
+  }
+
+  &__app_link_cards {
+    display: flex;
+    
+  }
+
+
+
+  &__app_img {
+    position: absolute;
+    bottom: 2px;
+    left: calc(50% - 50px);
+  }
+
+  &__qr_card {
+    display: flex;
+    align-items: center;
+  }
+
+  &_qr_text {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 211px;
+    color: #000;
+  }
+}
+.appStore:not(last-child) {
+  margin-right: 18px;
+}

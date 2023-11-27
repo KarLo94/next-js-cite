@@ -11,7 +11,7 @@ const Button = ({ text, color }) => {
   //   color.push(styles.greyBtn)
   // }
 
-console.log({text, color});
+console.log({text});
   return (
     <button className={`${styles.minStylesBtn} ${color}`}>
       <a className={styles.minStylesBtnText}>{text}</a>

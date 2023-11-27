@@ -1,0 +1,64 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+
+.cityFlex {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navList {
+  margin-left: auto;
+}
+
+.cityText {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+}
+
+.cityText:hover {
+  border-bottom: 1px solid #000;
+}
+
+.navLink {
+  margin-right: 48px;
+  font-weight: 500;
+
+  .navText {
+    font-size: 12px;
+    line-height: 20px;
+    color: #797979;
+  }
+
+  .navText:hover {
+    color: #000;
+  }
+
+  .navLinkSpan {
+    margin-left: 10px;
+    color: #da0916;
+  }
+
+
+}
+
+.navPhone {
+  color: #2e7bb2;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.navPhone:hover {
+  color: #da0916;
+}
