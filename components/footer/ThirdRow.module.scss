@@ -1,7 +1,6 @@
 .footer__nav__banner {
   background-image: url('/image-page-footer/banner.webp');
   padding: 28px 24px;
-  // margin-right: 30px;
   background-size: cover;
   background-position-x: center;
   width: 451px;
@@ -107,5 +106,15 @@
     margin-right: 40px;
     margin-bottom: 35px;
   }
+}
 
+@media (max-width: 1024px) {
+  .footer__nav__section {
+    width: 205px;
+  }
+  .footer__nav__name .socialList {
+    flex-direction: column;
+  }
+
+  
 }

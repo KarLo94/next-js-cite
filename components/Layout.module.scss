@@ -22,3 +22,8 @@
   .container {
   padding: 0 3.9062vw; }
 }
+@media (max-width: 1024px) {
+  .container {
+    padding-top: 40px;
+  }
+}

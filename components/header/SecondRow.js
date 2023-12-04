@@ -8,7 +8,7 @@ const SecondRow = () => {
   return (
     <div className={styles.flex}>
       <Link href="/" className={styles.logoLink}>
-        <Image
+        <Image className={styles.imgLogo}
           src="image-page-header/logo.svg"
           width={150}
           height={40}
@@ -19,6 +19,7 @@ const SecondRow = () => {
       <CatalogRooms />
 
       <nav className={styles.secondRowNav}>
+        <a href="/" className={`${styles.secondRowNavItm} ${styles.none}`}>Главная</a>
         <a href="#" className={styles.secondRowNavItm}>
           Идеи
         </a>

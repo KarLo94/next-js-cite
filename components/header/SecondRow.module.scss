@@ -118,8 +118,8 @@
 
 .iconCount {
   position: absolute;
-  right: -1px;
-  top: -2px;
+  right: -3px;
+  top: 0;
   padding: 1px 6px;
   border-radius: 9px;
   color: #fff;
@@ -130,6 +130,9 @@
 .iconEmpty {
   background-color: #c0c0c0;
 }
+
+
+
 
 @media (max-width:1440px) {
   .flex {
@@ -145,5 +148,51 @@
 
   .searchBtn {
     right: 10px;
+  }
+  .none {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .imgLogo {
+    max-height: 32px;
+  }
+  .search {
+    background-color: #f9f9f9;
+    border: solid 0.5px #e9e9e9;
+  }
+  .searchContainer {
+    width: 90%;
+  }
+  .text {
+    display: none;
+  }
+  .secondRowNavItm {
+    margin-right: 12px;
+    border: 1px solid #e9e9e9;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .secondRowNav {
+    order: 2;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .none {
+    display: inline-block;
+  }
+  .icon {
+    width: 22px;
+    height: 20px;
+  }
+  .iconCount {
+    right: -9px;
+    top: -4px;
+  }
+  .btn:not(:last-child) {
+    margin-right: 24px;
   }
 }

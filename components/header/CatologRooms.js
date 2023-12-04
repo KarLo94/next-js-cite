@@ -20,7 +20,7 @@ const Catolog = () => {
             <span className={styles.line}></span>
             <span className={styles.line}></span>
           </div>
-          Каталог
+          <p className={styles.none}>Каталог</p>
           {isOpen && (
             <div className={styles.catalog}>
               <nav className={styles.catalogNav}>
@@ -40,7 +40,7 @@ const Catolog = () => {
           )}
         </button>
         <button
-          className={`${styles.secondRowCtlBtn} ${isOpen1 && styles.active}`}
+          className={`${styles.secondRowCtlBtn} ${styles.none} ${isOpen1 && styles.active}`}
           onClick={() => setOpen1((isOpen1 = !isOpen1))}>
           <span className={styles.iconRooms}>
             <Image

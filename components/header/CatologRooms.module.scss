@@ -75,3 +75,16 @@
   background-color: #da0916;
   color: #fff;
 }
+
+@media (max-width: 1024px) {
+  .none {
+    display: none;
+  }
+  .burger {
+    margin: 0;
+  }
+  .secondRowCatalog {
+    order: 2;
+    margin-top: 20px;
+  }
+}

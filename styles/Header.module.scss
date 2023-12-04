@@ -44,3 +44,11 @@
   .container {
   padding: 0 3.9062vw; }
 }
+@media (max-width: 1024px) {
+  .firstRow {
+    display: none;
+  }
+  .thirdRowLinkFlex {
+    display: none;
+  }
+}

@@ -94,3 +94,12 @@
     border-bottom: 1px solid black;
   }
   
+
+  @media (max-width: 1024px) {
+    .footer__copyright__wrapper {
+      flex-direction: column;
+    }
+    .footer__copyright__links {
+      margin-top: 36px;
+    }
+  }
