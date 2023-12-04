@@ -1,5 +1,24 @@
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 202px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10.5208vw;
+}
+
+@media (max-width: 1600px) {
+  .container {
+  padding: 0 1.625vw; }
+}
+
+@media (max-width: 1440px) {
+  .container {
+  padding: 0 5.555vw; }
+}
+
+@media (max-width: 1366px) {
+  .container {
+  padding: 0 3.0746vw; }
+}
+@media (max-width: 1280px) {
+  .container {
+  padding: 0 3.9062vw; }
 }

@@ -24,6 +24,7 @@ const ThirdRow = () => {
               src="/image-page-footer/qr.webp"
               width={60}
               height={60}
+              loading='lazy'
               alt="Qr" />
             <div className={styles.footer__nav__banner__content__bottom__text}>
               <p className={styles.footer__nav__title__bot}>

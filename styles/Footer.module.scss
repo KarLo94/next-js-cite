@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 205px;
+  padding: 0 10.5208vw;
 }
 
 .footer {
@@ -9,7 +9,7 @@
   width: 100%;
   background-image: url(/image-page-footer/backgroung.webp);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .subscribe {
@@ -29,4 +29,24 @@
 
 .footer__copyright {
   background-color: #f9f9f9;
+}
+
+
+@media (max-width: 1600px) {
+  .container {
+  padding: 0 1.625vw; }
+}
+
+@media (max-width: 1440px) {
+  .container {
+  padding: 0 5.555vw; }
+}
+
+@media (max-width: 1366px) {
+  .container {
+  padding: 0 3.0746vw; }
+}
+@media (max-width: 1280px) {
+  .container {
+  padding: 0 3.9062vw; }
 }
