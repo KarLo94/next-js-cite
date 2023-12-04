@@ -1,15 +1,14 @@
 import City from './City';
 import styles from './FirstRow.module.scss';
-import Image from "next/image";
 
 const FirstRow = () => {
   return (
 
-        <> 
+        <div className={styles.flex}> 
           <City />
 
           <nav className={styles.navList}>
-            <ul className={styles.flex}>
+            <ul className={styles.flexNav}>
               <a href="#" className={styles.navLink}>
                 <li className={styles.navText}>Карьера в Hoff</li>
               </a>
@@ -39,9 +38,7 @@ const FirstRow = () => {
               +7 (484) 221-24-53
             </a>
           </div>
-        </>
-    
-   
+        </div>
   )
 }
 

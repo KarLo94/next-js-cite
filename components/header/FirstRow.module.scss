@@ -1,7 +1,13 @@
 .flex {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 100%;
+}
+
+.flexNav {
+  display: flex;
+  // justify-content: space-between;
+  // align-items: center;
   height: 100%;
 }
 
@@ -27,8 +33,6 @@
     margin-left: 10px;
     color: #da0916;
   }
-
-
 }
 
 .navPhone {

@@ -12,9 +12,8 @@ import chairs from "../../public/index-popular-categories/708x456_90(5).webp";
 
 const PopCatItem = () => {
   return (
-    <div className={styles.categories}>
+    
       <div className={styles.catList}>
-
         <div className={styles.catItem}>
           <Link href="#">
             <div>
@@ -95,7 +94,6 @@ const PopCatItem = () => {
             </Link>
         </div>
       </div>
-    </div>
   )
 }
 

@@ -42,3 +42,15 @@
     color: #000;
   }
 }
+
+@media (max-width: 1280px) {
+  .footer__app_link_text {
+    font-size: 22px;
+  }
+  .footer__app_link {
+    max-width: 386px;
+  }
+  .footer_qr_text {
+    display: none;
+  }
+}

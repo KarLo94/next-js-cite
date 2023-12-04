@@ -4,17 +4,10 @@
   padding: 0 10.5208vw;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
 
 .firstRow {
   height: 40px;
   background-color: #fafafc;
-  padding-bottom: 0;
 }
 
 /* Вторая строка */
@@ -39,7 +32,8 @@
 
 @media (max-width: 1440px) {
   .container {
-  padding: 0 5.555vw; }
+  padding: 0 5.555vw;
+  margin-bottom: 30px; }
 }
 
 @media (max-width: 1366px) {

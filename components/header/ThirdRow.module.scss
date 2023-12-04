@@ -100,3 +100,9 @@ background-color: transparent;
 .icon-close {
 fill: #4c4c4c;
 }
+
+@media (max-width: 1280px) {
+  .thirdRowLink:nth-child(6) {
+    display: none;
+  }
+}

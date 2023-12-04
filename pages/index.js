@@ -18,13 +18,13 @@ const Home = () => {
      <main className={`${styles.main}`}>
   
   
-       <div className={styles.main__banner}>
+       <div>
 
-         <SwiperBanner />
+        <SwiperBanner />
 
-         <PopularCategories />
+        <PopularCategories />
 
-         <Carousel />
+        <Carousel />
 
        </div>
   

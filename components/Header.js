@@ -9,13 +9,13 @@ const Header = () => {
 
   return (
     <>
-      <div className={styles.firstRow}>
-        <div className={`${styles.flex} ${styles.container}`}>
+      <div>
+        <div className={`${styles.container} ${styles.firstRow}`}>
           <FirstRow />
         </div>
       </div>
 
-      <div className={`${styles.flex} ${styles.secondRow} ${styles.container}`}>
+      <div className={`${styles.secondRow} ${styles.container}`}>
         <SecondRow />
       </div>
 
