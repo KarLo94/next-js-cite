@@ -13,8 +13,8 @@ const PopularCategories = () => {
         <PopCatItem />
         <div className={styles.btnFlex}>
            {/* Не работают ссылки */}
-          {/* <Buttons href="#" text="Каталог товаров"/>
-          <Buttons text="Каталог товаров" href="#"/> */}
+          <Buttons color = "red" href="#" text="Каталог товаров"/>
+          <Buttons color="grey" text="Какая нибудь яботня" href="#"/>
 
         </div>
 
