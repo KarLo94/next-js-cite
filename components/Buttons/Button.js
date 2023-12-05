@@ -1,11 +1,16 @@
 import styles from "./Buttons.module.scss";
+import cn from "classnames";
 
 const Button = ({ text, color }) => {
 
+  
 
-console.log({text , color});
+
   return (
-    <button className={`${styles.minStylesBtn}`}>
+    <button className={cn(styles.minStylesBtn, {
+      [styles.redBtn]: color === 'red',
+      [styles.greyBtn]: color === 'grey',
+    })}>
       <a className={`${styles.minStylesBtnText}`}>{text}</a>
     </button>
   )
